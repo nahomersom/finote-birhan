@@ -2,6 +2,11 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import '../Widgets/appBar.dart';
 class mezmurLists extends StatelessWidget{
+  List<Map> x = [
+    {'x':1},
+    {'y':2},
+    {'z':3}
+  ];
   @override
   Widget build(BuildContext context) {
 
@@ -23,12 +28,12 @@ class mezmurLists extends StatelessWidget{
 
                   centerTitle: true,
 
-                  title: Text('መዝሙራት'),
+                  title: Text('m'),
                
                 flexibleSpace: FlexibleSpaceBar(
                   background: Container(
 
-                      margin: const EdgeInsets.only(right: 50, left: 50,top: 50),
+                      margin: const EdgeInsets.only(right: 50, left: 50,top: 65),
 
                       child: Center(
 
@@ -41,32 +46,14 @@ class mezmurLists extends StatelessWidget{
 
                                   borderRadius: BorderRadius.all(Radius.circular(10))
                                 ),
-                                labelText: 'መዝሙር አይነት ይምረጡይምረጡ',
+                                labelText: 'choose',
                           ),
                             )
                           )
 
                   ),
                 ),
-                // flexibleSpace: FlexibleSpaceBar(
-                  // title: Text('hdkjkdjk'),
-                  // background: Text('kdjakjkjdkajjjjjjjjjjjjjjjjjjjjjj'),
-                  // centerTitle: true,
-                  // ),
-                  // bottom: PreferredSize(child: Icon(Icons.linear_scale,size: 60.0,), preferredSize: Size.fromHeight(0)),
-
-    //     bottom: AppBar(
-    //     title: Container(
-    //       height: 45,
-    //       child: TextField(
-    //         decoration: InputDecoration(
-    //             border: OutlineInputBorder(),
-    //             hintText: 'Enter a search term'),
-    //       ),
-    //     ),
-    // // ),
-    // ),
-              ),
+                ),
               SliverList(delegate: SliverChildBuilderDelegate(
                     (_, int index) {
                 return ListTile(
