@@ -1,7 +1,7 @@
 import 'package:finote_birhan/constants.dart';
 import 'package:flutter/material.dart';
 final lightThemeData = ThemeData(
- // brightness: Brightness.light,
+ brightness: Brightness.light,
   primaryColor: kPrimaryColor,
   colorScheme: ColorScheme.fromSwatch().copyWith(secondary: kSecondaryColor),
   tabBarTheme: TabBarTheme(labelColor: kTabBarColor),
@@ -9,7 +9,7 @@ final lightThemeData = ThemeData(
   elevatedButtonTheme: elevatedButton
 );
 final darkThemeData = ThemeData(
-  //brightness: Brightness.dark,
+  brightness: Brightness.dark,
   primaryColor: bgColorDarkTheme,
   colorScheme: ColorScheme.fromSwatch().copyWith(secondary: kTextColorDarkTheme),
   tabBarTheme: TabBarTheme(labelColor: kTabBarColorDarkTheme),
