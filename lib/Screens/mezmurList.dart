@@ -84,9 +84,13 @@
       (context, int index) {
       return ListTile(
       leading: Container(
-      padding: EdgeInsets.all(8),
+      padding: EdgeInsets.all(6),
       width: 100,
-      child: Placeholder()),
+      child: CircleAvatar(
+            radius: 550,
+            backgroundColor: Colors.brown.shade800,
+            child: const Text('AH'),
+      )),
       title:
       Container(
       decoration: BoxDecoration( border: Border(bottom: BorderSide(color: Colors.black26))),
