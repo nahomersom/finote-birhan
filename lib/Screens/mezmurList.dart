@@ -1,21 +1,22 @@
       import 'package:finote_birhan/Widgets/toogler.dart';
+import 'package:flutter/cupertino.dart';
       import 'package:flutter/material.dart';
 
 import '../constants.dart';
       class mezmurLists extends StatelessWidget{
       List<Map> x = [
-      {'አይነት':'የአዲስ አመት'},
-      {'አይነት':'የመስቀል'},
-      {'አይነት':'የአቡነአረጋዊ'},
-      {'አይነት':'የህዳር ሚካኤል'},
-      {'አይነት':'የአዲስ አመት'},
-       {'አይነት':'የመስቀል'},
-            {'አይነት':'የአቡነአረጋዊ'},
-            {'አይነት':'የህዳር ሚካኤል'},
-            {'አይነት':'የአዲስ አመት'},
-            {'አይነት':'የመስቀል'},
-            {'አይነት':'የአቡነአረጋዊ'},
-            {'አይነት':'የህዳር ሚካኤል'}
+      {'አይነት':'የአዲስ አመት','ምስል':'https://kjkjkjdkjk'},
+      {'አይነት':'የመስቀል','ምስል':'https://kjkjkjdkjk'},
+      {'አይነት':'የአቡነአረጋዊ','ምስል':'https://kjkjkjdkjk'},
+      {'አይነት':'የህዳር ሚካኤል','ምስል':'https://kjkjkjdkjk'},
+      {'አይነት':'የአዲስ አመት','ምስል':'https://kjkjkjdkjk'},
+       {'አይነት':'የመስቀል','ምስል':'https://kjkjkjdkjk'},
+            {'አይነት':'የአቡነአረጋዊ','ምስል':'https://kjkjkjdkjk'},
+            {'አይነት':'የህዳር ሚካኤል','ምስል':'https://kjkjkjdkjk'},
+            {'አይነት':'የአዲስ አመት','ምስል':'https://kjkjkjdkjk'},
+            {'አይነት':'የመስቀል','ምስል':'https://kjkjkjdkjk'},
+            {'አይነት':'የአቡነአረጋዊ','ምስል':'https://kjkjkjdkjk'},
+            {'አይነት':'የህዳር ሚካኤል','ምስል':'https://kjkjkjdkjk'}
       ];
       @override
       Widget build(BuildContext context) {
@@ -38,9 +39,23 @@ import '../constants.dart';
 
       centerTitle: true,
 
-      title: Text('መዝሙራት',style: TextStyle(
-            color: Colors.black
-      ),),
+      title: Container(
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          children: [
+            Container(),
+
+            Text('መዝሙራት'),
+           Icon(
+             Icons.notifications_active_outlined,
+             size: 32.0,
+             color: kInactiveIconColor
+           )
+          ],
+        ),
+      ),
+
+
 
       flexibleSpace: FlexibleSpaceBar(
       background: Container(
@@ -116,6 +131,30 @@ import '../constants.dart';
       ]
       ),
       floatingActionButton: FloatingActionButton(onPressed: null,),
+
+        bottomNavigationBar: BottomNavigationBar(
+          unselectedItemColor: kInactiveIconColor,
+          selectedItemColor: kActiveIconColor,
+          showUnselectedLabels: true,
+          items:<BottomNavigationBarItem>[
+               BottomNavigationBarItem(
+                 icon:Icon(Icons.library_music_outlined),
+                 label:'መዝሙሮች'
+               ),
+            BottomNavigationBarItem(
+                icon:Icon(Icons.music_note_outlined),
+                label:'እለታዊ መዝሙሮች'
+            ),
+            BottomNavigationBarItem(
+                icon:Icon(Icons.menu_book_outlined),
+                label:'ትምህርቶች'
+            ),
+            BottomNavigationBarItem(
+                icon:Icon(Icons.settings),
+                label:'ማስተካከያ'
+            ),
+          ]
+        ),
       );
       }
       }

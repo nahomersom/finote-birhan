@@ -6,20 +6,26 @@ const kTabBarColor = Color(0xFFae52d4);
 const kStatusBarColor = Color(0xFF4a0072);
 // const kListLightBackgroundColor = Color(0xFF788198);
 const kListLightBackgroundColor = Color(0xFFF2F2F2);
-
+const kFillColor = Color(0xffe4e4e4);
+const kInactiveIconColor = Color(0xff8e8e93);
+const kActiveIconColor = Color(0xff007aff);
 //dark theme
 const bgColorDarkTheme = Color(0xFF19182c);
 const kTextColorDarkTheme = Colors.white;
 const kTabBarColorDarkTheme = Color(0xff212121);
 const kListDarkBackgroundColor = Color(0xFF242339);
+//search field
 const kSearchField = InputDecoration(
   hintText:'የመዝሙር መደብ ይፈልጉ',
   floatingLabelBehavior: FloatingLabelBehavior.never,
-  prefixIcon: Icon(Icons.search),
+  prefixIcon: Icon(
+    Icons.search,
+
+  ),
   filled:true,
-  fillColor:  Color(0xffe4e4e4),
+  fillColor:  kFillColor,
   hintStyle: TextStyle(
-    color: Color(0xff8e8e93),
+    color: kInactiveIconColor,
     height: 2.8
     // fontWeight: FontWeight.bold
   ),
