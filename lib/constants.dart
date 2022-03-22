@@ -16,6 +16,7 @@ const kTabBarColorDarkTheme = Color(0xff212121);
 const kListDarkBackgroundColor = Color(0xFF242339);
 //search field
 const kSearchField = InputDecoration(
+  // contentPadding: EdgeInsetsGeometry.lerp(2, b, t),
   hintText:'የመዝሙር መደብ ይፈልጉ',
   floatingLabelBehavior: FloatingLabelBehavior.never,
   prefixIcon: Icon(

@@ -1,4 +1,5 @@
 import 'package:finote_birhan/Screens/mezmurList.dart';
+import 'package:finote_birhan/Screens/setting.dart';
 import 'package:flutter/material.dart';
 import 'package:finote_birhan/theme.dart';
 void main(){
@@ -14,9 +15,12 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       theme: lightThemeData,
       darkTheme: darkThemeData,
-      home: Scaffold(
-          body: mezmurLists()
-      ),
+      // home: mezmurLists(),
+     initialRoute: '/',
+     routes: {
+        '/':(context)=>mezmurLists(),
+       '/setting':(context)=>Setting(),
+     },
     );
   }
 }
