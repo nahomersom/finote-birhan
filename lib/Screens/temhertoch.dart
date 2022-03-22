@@ -1,7 +1,7 @@
 
 import 'package:flutter/material.dart';
 
-class temehertoch extends StatelessWidget{
+class Temehertoch extends StatelessWidget{
   Widget build(BuildContext context){
     return Scaffold(
       body: Center(
