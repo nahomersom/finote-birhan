@@ -39,15 +39,17 @@ class _SharedBottomNavigationBarState extends State<SharedBottomNavigationBar> {
           showUnselectedLabels: true,
           currentIndex: _currentIndex,
           onTap: onItemTab,
+          type:BottomNavigationBarType.shifting,
+
           items:<BottomNavigationBarItem>[
             BottomNavigationBarItem(
               icon: AnimatedSwitcher(
-                duration: const Duration(seconds: 3),
-                transitionBuilder: (Widget child, Animation<double> animation) {
-                  return ScaleTransition(child: child, scale: animation);
-                },
-                child: isIconPressed ? Icon(Icons.library_music):Icon(
-                    Icons.library_music_outlined),
+                duration: const Duration(seconds: 1),
+                // transitionBuilder: (Widget child, Animation<double> animation) {
+                //   return ScaleTransition(scale: animation, child: child);
+                // },
+                child: isIconPressed ? Icon(Icons.library_music,   key: UniqueKey(),):Icon(
+                    Icons.library_music_outlined,   key: UniqueKey(),),
               ),
 
               label:'መዝሙሮች',

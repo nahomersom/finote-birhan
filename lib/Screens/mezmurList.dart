@@ -19,13 +19,13 @@ class _MezmurListsState extends State<MezmurLists> with SingleTickerProviderStat
       {'አይነት':'የአቡነአረጋዊ','ምስል':'https://kjkjkjdkjk'},
       {'አይነት':'የህዳር ሚካኤል','ምስል':'https://kjkjkjdkjk'},
       {'አይነት':'የአዲስ አመት','ምስል':'https://kjkjkjdkjk'},
-       {'አይነት':'የመስቀል','ምስል':'https://kjkjkjdkjk'},
-            {'አይነት':'የአቡነአረጋዊ','ምስል':'https://kjkjkjdkjk'},
-            {'አይነት':'የህዳር ሚካኤል','ምስል':'https://kjkjkjdkjk'},
-            {'አይነት':'የአዲስ አመት','ምስል':'https://kjkjkjdkjk'},
-            {'አይነት':'የመስቀል','ምስል':'https://kjkjkjdkjk'},
-            {'አይነት':'የአቡነአረጋዊ','ምስል':'https://kjkjkjdkjk'},
-            {'አይነት':'የህዳር ሚካኤል','ምስል':'https://kjkjkjdkjk'}
+      {'አይነት':'የመስቀል','ምስል':'https://kjkjkjdkjk'},
+      {'አይነት':'የአቡነአረጋዊ','ምስል':'https://kjkjkjdkjk'},
+      {'አይነት':'የህዳር ሚካኤል','ምስል':'https://kjkjkjdkjk'},
+      {'አይነት':'የአዲስ አመት','ምስል':'https://kjkjkjdkjk'},
+      {'አይነት':'የመስቀል','ምስል':'https://kjkjkjdkjk'},
+      {'አይነት':'የአቡነአረጋዊ','ምስል':'https://kjkjkjdkjk'},
+      {'አይነት':'የህዳር ሚካኤል','ምስል':'https://kjkjkjdkjk'}
       ];
 
       @override

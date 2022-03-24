@@ -4,10 +4,8 @@ import 'package:flutter/material.dart';
 import 'package:finote_birhan/theme.dart';
 
 import 'Widgets/bottomNavigationBar.dart';
-void main(){
+void main()=>runApp(MyApp());
 
-   runApp(MyApp());
-}
 class MyApp extends StatelessWidget {
 
   @override
@@ -16,7 +14,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: lightThemeData,
-      darkTheme: darkThemeData,
+      darkTheme: lightThemeData,
       // home: mezmurLists(),
      initialRoute: '/',
      routes: {
